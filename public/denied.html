@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steam Idler – Access denied</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Access denied</h1>
+  <p id="reason">Unauthorized. FUCK YOU!</p>
+  <p><a href="/">Back</a></p>
+  <script>
+    const reason = new URLSearchParams(location.search).get("reason");
+    if(reason){
+        document.getElementById("readon").textContent = reason;
+    }
+  </script>
+</body>
+</html>

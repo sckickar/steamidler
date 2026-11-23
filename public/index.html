@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steam Idler</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Steam Idler</h1>
+    <form method="post" action="/auth/logout">
+      <span id="me"></span>
+      <button type="submit">Sign out</button>
+    </form>
+  </header>
+
+  <section>
+    <h2>Status</h2>
+    <dl>
+      <dt>State</dt>        <dd id="status">loading…</dd>
+      <dt>Idling since</dt> <dd id="since">-</dd>
+      <dt>Paused by</dt>    <dd id="blocked">-</dd>
+      <dt>Last error</dt>   <dd id="error">-</dd>
+      <dt>Fake match</dt>   <dd id="match">-</dd>
+    </dl>
+    <h3>Games</h3>
+    <ul id="games"></ul>
+  </section>
+
+  <section>
+    <h2>Settings</h2>
+    <form id="settings" class="stack">
+      <label>Game App IDs (comma separated, max 32)
+        <textarea id="ids" placeholder="730, 440, 570"></textarea>
+      </label>
+      <div class="row">
+        <button type="submit">Save games</button>
+        <button type="button" id="restart">Restart login</button>
+      </div>
+      <output id="msg"></output>
+      
+    </form>
+  </section>
+
+  <script src="/app.js"></script>
+</body>
+</html>

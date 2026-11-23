@@ -1,0 +1,37 @@
+/* layout only */
+body {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+section {
+  margin-bottom: 2rem;
+}
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1rem;
+}
+dd {
+  margin: 0;
+}
+form.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+textarea {
+  min-height: 4rem;
+}

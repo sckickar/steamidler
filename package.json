@@ -1,0 +1,18 @@
+{
+  "name": "steam-idler",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --env-file=.env --watch src/server.js",
+    "token": "node scripts/get-token.mjs",
+    "secret": "node scripts/gen-secret.mjs"
+  },
+  "dependencies": {
+    "steam-user": "^5.3.0"
+  },
+  "devDependencies": {
+    "steam-session": "^1.9.4"
+  }
+}
